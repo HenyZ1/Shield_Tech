@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Shield Tech</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.ico" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial:wght@400&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/Other_Pages.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top ">
+    <div
+      class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="Anasayfa.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
+        <h1 class="sitename" style="color: #db0226;"><strong>Shield Tech</strong></h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="Anasayfa.html" class="active">Anasayfa</a></li>
+          <li id="about" class="dropdown"><a href="#"><span>Kurumsal</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="Hakkımızda.html">Hakkımızda</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown"><a href="EMC_Yankısız_Odalar.html"><span>EMC Yankısız Odalar</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="Tam_Yarı_Yansımasız_Odalar.html">Tam/Yarı Yansımasız Odalar</a></li>
+
+              <li><a href="Askeri_Standart_Odalar.html">Askeri Standart Odalar</a></li>
+              <li class="dropdown"><a href="#"><span>Ekranlı Odalar</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="Güvenli_Sessiz_Odalar.html">Güvenli - Sessiz Odalar</a></li>
+                  <li><a href="Kontrol_ve_Yükseltici_Odaları.html">Kontrol ve Yükseltici Odaları</a></li>
+                  <li><a href="Siber_Güvenlik_Odaları.html">Siber Güvenlik Odaları</a></li>
+                  <li><a href="Medikal_Ekranlama_EEG.html">Medikal Ekranlama - EEG</a></li>
+                  <li><a href="Yüksek_Gerilimli_Lab_Ekranlama.html">Yüksek Gerilimli Lab. Ekranlama</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Test Ölçüm</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="RF_Mikrodalga_Test_Cihazları.html">RF, Mikrodalga, Test Cihazları</a></li>
+              <li><a href="EMC_Test_Aksesuarları.html">EMC Test Aksesuarları</a></li>
+              <li><a href="Bakım_Tamir_Modifikasyon.html">Bakım - Tamir - Modifikasyon</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Hizmetlerimiz</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="Dizayn_Kurulum_Hizmetleri.html">Dizayn - Kurulum Hizmetleri</a></li>
+              <li><a href="Oda_Lokasyon_Değiştirme.html">Oda Lokasyon Değiştirme</a></li>
+              <li><a href="Bakım_Tamir_Modifikasyon.html">Bakım - Tamir - Modifikasyon</a></li>
+            </ul>
+          </li>
+          <li><a href="Ürünler.html">Ürünler</a></li>
+          <li><a href="Blog.html">Blog</a></li>
+          <li><a href="İletişim.html">İletişim</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div id="Language_Selector" class="dropdown">
+        <button style="background-color: rgba(25,64,135,0.1); border-radius: 30px;"
+          class="btn btn-primary-subtle dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          🌐 Dil Seçimi
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#"><span><img class="p-1" src="assets/img/Flags/tr.png" alt=""></span>
+              Türkçe</a></li>
+          <li><a class="dropdown-item" href="#"><span><img class="p-1" src="assets/img/Flags/en.png"
+                  alt=""></span>English</a></li>
+          <li><a class="dropdown-item" href="#"><span><img class="p-1" src="assets/img/Flags/deu.png"
+                  alt=""></span>Deutsch</a></li>
+          <li><a class="dropdown-item" href="#"><span><img class="p-1" src="assets/img/Flags/fr.png"
+                  alt=""></span>Français</a></li>
+          <li><a class="dropdown-item" href="#"><span><img class="p-1" src="assets/img/Flags/ru.png"
+                  alt=""></span>Русский</a></li>
+          <li><a class="dropdown-item" href="#"><span><img class="p-1" src="assets/img/Flags/pt-br.png"
+                  alt=""></span>Português</a></li>
+          <li><a class="dropdown-item" href="#"><span><img class="p-1" src="assets/img/Flags/uae.png" alt=""></span>
+              العربية</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+  </header>
+
+
+
+    <!-- About Section -->
+    <section id="hakkimizda" class="container content-section mt-5" data-aos="fade-up" data-aos-delay="400" data-aos-once="true">
+        <h2 class="section-title">Medikal Ekranlama - EEG - <span style="color:#db0226;">Hassas Ölçümler İçin Tam Koruma</span></h2>
+        <div class="about-content">
+            <div class="about-text mt-4">
+                <p style="font-size: 18px;">Biz <span class="fw-bold">Shield Tech</span> olarak, Medikal Ekranlama - EEG odaları ile tıbbi ölçüm süreçlerinizde en yüksek hassasiyeti sağlıyoruz! Elektromanyetik girişimleri engelleyerek EEG ölçümlerinde doğru ve güvenilir sonuçlar elde etmenize olanak tanıyoruz.</p>
+                
+                <div class="feature-list mt-5">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                          <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <div>
+                            <h4>Hassas EEG Ölçümleri</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item mt-5">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Elektromanyetik Ekranlama</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item mt-5">
+                        <div class="feature-icon">
+                          <i class="fas fa-hospital"></i>
+                        </div>
+                        <div>
+                            <h4>Medikal Standartlara Uygunluk</h4>
+                        </div>
+                    </div>
+                    <div class="feature-item mt-5">
+                      <div class="feature-icon">
+                        <i class="fas fa-check-circle"></i>
+                      </div>
+                      <div>
+                          <h4>Güvenilir ve Dayanıklı Tasarım</h4>
+                      </div>
+                    </div>
+                    <p style="font-size: 18px;" class="mt-5"><span class="fw-bold">Shield Tech</span> ile medikal ölçümlerinizde güvenilirliği ve doğruluğu garantileyin! Medikal Ekranlama - EEG odalarımızla, hassas test süreçlerinizde yanınızdayız. Detaylı bilgi ve teklif için hemen bizimle iletişime geçin!</p>
+                </div>
+            </div>
+            
+            <div class="about-image">
+                <img src="assets/1r.jpg" alt="Medikal Ekranlama EEG">
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galeri" style="border-radius: 50px;" class="container content-section gallery-container " data-aos="fade-up" data-aos-delay="400" data-aos-once="true">
+        <h2 class="text-center m-5">Proje Galerisi</h2>
+        
+        <div class="gallery-grid m-4">
+            <div class="gallery-item">
+                <img src="assets/1r.jpg" alt="EEG Odası 1">
+                <div class="overlay">
+                    <h3>EEG Odası 1</h3>
+                    <p>Elektromanyetik ekranlamalı EEG odası</p>
+                </div>
+                <button class="view-btn" data-bs-toggle="modal" data-bs-target="#photoModal" data-src="https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+                    <i class="fas fa-search-plus"></i>
+                </button>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="assets/1r.jpg" alt="EEG Odası 2">
+                <div class="overlay">
+                    <h3>EEG Odası 2</h3>
+                    <p>Hassas ölçümler için optimize edilmiş</p>
+                </div>
+                <button class="view-btn" data-bs-toggle="modal" data-bs-target="#photoModal" data-src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+                    <i class="fas fa-search-plus"></i>
+                </button>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="assets/1r.jpg" alt="EEG Odası 3">
+                <div class="overlay">
+                    <h3>EEG Odası 3</h3>
+                    <p>Medikal standartlara uygun tasarım</p>
+                </div>
+                <button class="view-btn" data-bs-toggle="modal" data-bs-target="#photoModal" data-src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+                    <i class="fas fa-search-plus"></i>
+                </button>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="assets/1r.jpg" alt="EEG Odası 4">
+                <div class="overlay">
+                    <h3>EEG Odası 4</h3>
+                    <p>Güvenilir EEG ölçüm ortamı</p>
+                </div>
+                <button class="view-btn" data-bs-toggle="modal" data-bs-target="#photoModal" data-src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+                    <i class="fas fa-search-plus"></i>
+                </button>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="assets/1r.jpg" alt="EEG Odası 5">
+                <div class="overlay">
+                    <h3>EEG Odası 5</h3>
+                    <p>Elektromanyetik girişimsiz alan</p>
+                </div>
+                <button class="view-btn" data-bs-toggle="modal" data-bs-target="#photoModal" data-src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+                    <i class="fas fa-search-plus"></i>
+                </button>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="assets/1r.jpg" alt="EEG Odası 6">
+                <div class="overlay">
+                    <h3>EEG Odası 6</h3>
+                    <p>Yüksek hassasiyetli EEG test odası</p>
+                </div>
+                <button class="view-btn" data-bs-toggle="modal" data-bs-target="#photoModal" data-src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+                    <i class="fas fa-search-plus"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Photo Modal -->
+    <div class="modal fade" id="photoModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <button type="button" class="btn-close-custom" data-bs-dismiss="modal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div id="modalContent"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer data-aos="fade-up" data-aos-delay="400" data-aos-once="true">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+              <img src="assets/Shield-Tech.png" alt="Shield Tech Logo" class="img-fluid mb-4" style="max-width: 200px;">
+              <p class="mb-4">2011 yılında kurulmuş ve EMC Odaları konusunda global bir kuruluş olarak hizmet vermektedir.
+              </p>
+              <div class="social-icons">
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <h5>Hızlı Erişim</h5>
+              <ul>
+                <li><a href="#"><span style=" color:#db0226;  margin-right: 4px;"><i
+                        class="bi bi-arrow-right"></i></span>Hakkımızda</a></li>
+                <li><a href="#"><span style=" color:#db0226;  margin-right: 4px;"><i
+                        class="bi bi-arrow-right"></i></span>Yankısız Odalar</a></li>
+                <li><a href="#"><span style=" color:#db0226;  margin-right: 4px;"><i
+                        class="bi bi-arrow-right"></i></span>Ekranlı Odalar</a></li>
+                <li><a href="#"><span style=" color:#db0226;  margin-right: 4px;"><i
+                        class="bi bi-arrow-right"></i></span>Yansımasız Odalar</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <h5>Ürünler</h5>
+              <ul>
+                <li><a href="#"><span style=" color:#db0226;  margin-right: 4px;"><i class="bi bi-arrow-right"></i></span>3
+                    Metre</a></li>
+                <li><a href="#"><span style=" color:#db0226;  margin-right: 4px;"><i class="bi bi-arrow-right"></i></span>5
+                    Metre</a></li>
+                <li><a href="#"><span style=" color:#db0226;  margin-right: 4px;"><i class="bi bi-arrow-right"></i></span>10
+                    Metre</a></li>
+                <li><a href="#"><span style=" color:#db0226;  margin-right: 4px;"><i
+                        class="bi bi-arrow-right"></i></span>Tüm Ürünler</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <h5>İletişim</h5>
+              <address>
+                <p>Merkez Ofis</p>
+                <p>İstanbul, Türkiye</p>
+                <p class="mt-2">Email: info@shieldtech.com</p>
+                <p>Tel: +90 212 123 45 67</p>
+              </address>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>© <span id="currentYear"></span> <span style="color: #db0226;">Shield Tech.</span> Tüm hakları saklıdır.</p>
+          </div>
+        </div>
+      </footer>
+
+          <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Modal işlevselliği
+            const photoModal = document.getElementById('photoModal');
+            photoModal.addEventListener('show.bs.modal', function(event) {
+                const button = event.relatedTarget;
+                const src = button.getAttribute('data-src');
+                const modalContent = document.getElementById('modalContent');
+                modalContent.innerHTML = `<img src="${src}" alt="Büyük fotoğraf">`;
+            });
+            
+            photoModal.addEventListener('hidden.bs.modal', function() {
+                const modalContent = document.getElementById('modalContent');
+                modalContent.innerHTML = '';
+            });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 100,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+    
+    
+      <!-- Vendor JS Files -->
+      <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/vendor/aos/aos.js"></script>
+      <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+      <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+      <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+      <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+      <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+      <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    
+      <!-- Main JS File -->
+      <script src="assets/js/main.js"></script>
+    
+    
+    
+    </body>
+    
+    </html>

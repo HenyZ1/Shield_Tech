@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Shield Tech - Bakım Tamir Modifikasyon</title>
+  <meta name="description" content="Shield Tech'in profesyonel bakım, tamir ve modifikasyon hizmetleri ile ekipmanlarınızı en iyi durumda tutun.">
+  <meta name="keywords" content="bakım, tamir, modifikasyon, EMC, shield tech">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.ico" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial:wght@400&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/Bakım_Tamir.css" rel="stylesheet">
+</head>
+<body class="index-page">
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      <a href="Anasayfa.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <h1 class="sitename" style="color: #db0226;"><strong>Shield Tech</strong></h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="Anasayfa.html" class="active">Anasayfa</a></li>
+          <li id="about" class="dropdown"><a href="#"><span>Kurumsal</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="Hakkımızda.html">Hakkımızda</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="EMC_Yankısız_Odalar.html"><span>EMC Yankısız Odalar</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="Tam_Yarı_Yansımasız_Odalar.html">Tam/Yarı Yansımasız Odalar</a></li>
+              <li><a href="Askeri_Standart_Odalar.html">Askeri Standart Odalar</a></li>
+              <li class="dropdown"><a href="#"><span>Ekranlı Odalar</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="Güvenli_Sessiz_Odalar.html">Güvenli - Sessiz Odalar</a></li>
+                  <li><a href="Kontrol_ve_Yükseltici_Odaları.html">Kontrol ve Yükseltici Odaları</a></li>
+                  <li><a href="Siber_Güvenlik_Odaları.html">Siber Güvenlik Odaları</a></li>
+                  <li><a href="Medikal_Ekranlama_EEG.html">Medikal Ekranlama - EEG</a></li>
+                  <li><a href="Yüksek_Gerilimli_Lab_Ekranlama.html">Yüksek Gerilimli Lab. Ekranlama</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Test Ölçüm</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="RF_Mikrodalga_Test_Cihazları.html">RF, Mikrodalga, Test Cihazları</a></li>
+              <li><a href="EMC_Test_Aksesuarları.html">EMC Test Aksesuarları</a></li>
+              <li><a href="Bakım_Tamir_Modifikasyon.html">Bakım - Tamir - Modifikasyon</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Hizmetlerimiz</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="Dizayn_Kurulum_Hizmetleri.html">Dizayn - Kurulum Hizmetleri</a></li>
+              <li><a href="Oda_Lokasyon_Değiştirme.html">Oda Lokasyon Değiştirme</a></li>
+              <li><a href="Bakım_Tamir_Modifikasyon.html">Bakım - Tamir - Modifikasyon</a></li>
+            </ul>
+          </li>
+          <li><a href="Ürünler.html">Ürünler</a></li>
+          <li><a href="Blog.html">Blog</a></li>
+          <li><a href="İletişim.html">İletişim</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div id="Language_Selector" class="dropdown language-selector">
+        <button class="btn dropdown-toggle custom-lang-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          🌐 Dil Seçimi
+        </button>
+        <ul class="dropdown-menu custom-lang-menu">
+          <li><a class="dropdown-item" href="#"><img src="assets/img/Flags/tr.png" alt=""> Türkçe</a></li>
+          <li><a class="dropdown-item" href="#"><img src="assets/img/Flags/en.png" alt=""> English</a></li>
+          <li><a class="dropdown-item" href="#"><img src="assets/img/Flags/deu.png" alt=""> Deutsch</a></li>
+          <li><a class="dropdown-item" href="#"><img src="assets/img/Flags/fr.png" alt=""> Français</a></li>
+          <li><a class="dropdown-item" href="#"><img src="assets/img/Flags/ru.png" alt=""> Русский</a></li>
+          <li><a class="dropdown-item" href="#"><img src="assets/img/Flags/pt-br.png" alt=""> Português</a></li>
+          <li><a class="dropdown-item" href="#"><img src="assets/img/Flags/uae.png" alt=""> العربية</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section text-center">
+    <div class="container">
+      <h1 class="display-4">Bakım, Tamir ve Modifikasyon</h1>
+      <p class="lead">Ekipmanlarınızı en yüksek performansta tutmak için profesyonel çözümler sunuyoruz.</p>
+      <a href="#services" class="btn btn-primary mt-3">Hizmetlerimizi Keşfedin</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services-section container">
+    <h2 class="section-title text-center">Hizmetlerimiz</h2>
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="service-card" data-aos="fade-up">
+          <div class="service-icon"><i class="fas fa-tools"></i></div>
+          <h3>Periyodik Bakım</h3>
+          <p>İhtiyaçlarınıza özel modifikasyonlarla ekipmanlarınızı verimli ve modern yapıyoruz.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-icon"><i class="fas fa-wrench"></i></div>
+          <h3>Arıza Onarımı</h3>
+          <p>Hızlı, etkili tamir hizmetlerimizle ekipmanlarınızı kısa sürede çalışır yapıyoruz.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-icon"><i class="fas fa-cogs"></i></div>
+          <h3>Modifikasyon</h3>
+          <p>Ekipmanlarınızın ömrünü uzatmak için düzenli bakım hizmetleri sunuyoruz.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section id="process" class="process-section">
+    <div class="container">
+      <h2 class="section-title text-center">Hizmet Sürecimiz</h2>
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <div class="process-step" data-aos="fade-up">
+            <div class="step-number">1</div>
+            <h3>Değerlendirme</h3>
+            <p>Ekipmanlarınızı detaylı bir şekilde analiz ederek ihtiyaçları belirliyoruz.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="process-step" data-aos="fade-up" data-aos-delay="100">
+            <div class="step-number">2</div>
+            <h3>Planlama</h3>
+            <p>İhtiyaçlara uygun bakım, tamir veya modifikasyon planını oluşturuyoruz.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+            <div class="step-number">3</div>
+            <h3>Uygulama</h3>
+            <p>Profesyonel ekibimizle planı uygulayarak işlemleri tamamlıyoruz.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="process-step" data-aos="fade-up" data-aos-delay="300">
+            <div class="step-number">4</div>
+            <h3>Test ve Teslim</h3>
+            <p>Ekipmanlarınızı test ederek en iyi performansta teslim ediyoruz.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery-section container">
+    <h2 class="section-title text-center">Çalışmalarımızdan Örnekler</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item" data-aos="zoom-in">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Bakım Çalışması">
+        <div class="overlay">
+          <h3 class="text-light">Bakım Çalışması</h3>
+          <p>Endüstriyel ekipmanlar için kapsamlı bakım çalışması.</p>
+        </div>
+        <button class="view-btn" data-bs-toggle="modal" data-bs-target="#photoModal" data-src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+          <i class="fas fa-search-plus"></i>
+        </button>
+      </div>
+      <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+        <img src="assets/1r.jpg" alt="Tamir Süreci">
+        <div class="overlay">
+          <h3 class="text-light">Tamir Süreci</h3>
+          <p>Hassas ekipmanlar için tamir ve onarım.</p>
+        </div>
+        <button class="view-btn" data-bs-toggle="modal" data-bs-target="#photoModal" data-src="https://images.unsplash.com/photo-1581092160607-1e2e7161b5f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+          <i class="fas fa-search-plus"></i>
+        </button>
+      </div>
+      <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+        <img src="assets/1r.jpg" alt="Modifikasyon Projesi">
+        <div class="overlay">
+          <h3 class="text-light">Modifikasyon Projesi</h3>
+          <p>Modernizasyon ile ekipman verimliliği artırıldı.</p>
+        </div>
+        <button class="view-btn" data-bs-toggle="modal" data-bs-target="#photoModal" data-src="https://images.unsplash.com/photo-1581094281238-1f8c8c1e9c1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+          <i class="fas fa-search-plus"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal for Gallery -->
+  <div class="modal fade" id="photoModal" tabindex="-1" aria-labelledby="photoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div id="modalContent"></div>
+        </div>
+        <button type="button" class="btn-close-custom" data-bs-dismiss="modal" aria-label="Close">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="mt-5" data-aos="fade-up" data-aos-delay="400">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <img src="assets/Shield-Tech.png" alt="Shield Tech Logo" class="img-fluid mb-4" style="max-width: 200px;">
+          <p class="mb-4">2011 yılında kurulmuş ve EMC Odaları konusunda global bir kuruluş olarak hizmet vermektedir.</p>
+          <div class="social-icons">
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5>Hızlı Erişim</h5>
+          <ul>
+            <li><a href="#"><span style="color:#db0226; margin-right: 4px;"><i class="bi bi-arrow-right"></i></span>Hakkımızda</a></li>
+            <li><a href="#"><span style="color:#db0226; margin-right: 4px;"><i class="bi bi-arrow-right"></i></span>Yankısız Odalar</a></li>
+            <li><a href="#"><span style="color:#db0226; margin-right: 4px;"><i class="bi bi-arrow-right"></i></span>Ekranlı Odalar</a></li>
+            <li><a href="#"><span style="color:#db0226; margin-right: 4px;"><i class="bi bi-arrow-right"></i></span>Yansımasız Odalar</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5>Ürünler</h5>
+          <ul>
+            <li><a href="#"><span style="color:#db0226; margin-right: 4px;"><i class="bi bi-arrow-right"></i></span>3 Metre</a></li>
+            <li><a href="#"><span style="color:#db0226; margin-right: 4px;"><i class="bi bi-arrow-right"></i></span>5 Metre</a></li>
+            <li><a href="#"><span style="color:#db0226; margin-right: 4px;"><i class="bi bi-arrow-right"></i></span>10 Metre</a></li>
+            <li><a href="#"><span style="color:#db0226; margin-right: 4px;"><i class="bi bi-arrow-right"></i></span>Tüm Ürünler</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5>İletişim</h5>
+          <address>
+            <p>Merkez Ofis</p>
+            <p>İstanbul, Türkiye</p>
+            <p class="mt-2">Email: <a href="mailto:info@shieldtech.com">info@shieldtech.com</a></p>
+            <p>Tel: +90 212 123 45 67</p>
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="currentYear"></span> <span style="color: #db0226;">Shield Tech.</span> Tüm hakları saklıdır.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Custom JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Modal functionality
+      const photoModal = document.getElementById('photoModal');
+      photoModal.addEventListener('show.bs.modal', function(event) {
+        const button = event.relatedTarget;
+        const src = button.getAttribute('data-src');
+        const modalContent = document.getElementById('modalContent');
+        modalContent.innerHTML = `<img src="${src}" alt="Büyük fotoğraf">`;
+      });
+
+      photoModal.addEventListener('hidden.bs.modal', function() {
+        const modalContent = document.getElementById('modalContent');
+        modalContent.innerHTML = '';
+      });
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 100,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+
+      // Set current year in footer
+      document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+      // Initialize AOS
+      AOS.init({
+        duration: 800,
+        once: true
+      });
+    });
+  </script>
+</body>
+</html>

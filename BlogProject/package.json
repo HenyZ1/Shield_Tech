@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "@types/aos": "^3.0.7",
+    "@types/bootstrap": "^5.2.10",
+    "@types/jsonwebtoken": "^9.0.9"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "bootstrap": "^5.3.3",
+    "quill": "^2.0.3",
+    "react-quill": "^2.0.0"
+  }
+}

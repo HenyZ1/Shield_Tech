@@ -1,0 +1,131 @@
+
+/* Genel Stil */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background-color: #1d1a5a;
+}
+
+/* Giriş Sayfası */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('https://images.unsplash.com/photo-1507521628349-6e9b9a9c9e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Login Kartı */
+.login-card {
+  background: rgba(26, 31, 55, 0.9);
+  border-radius: 15px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+/* Başlık */
+.login-card h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #635bff;
+}
+
+/* Hata Mesajı */
+.alert {
+  background: #ff4d4f;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+/* Form Stilleri */
+.form-control {
+  background: #1a1f37;
+  border: 1px solid #a0a5ba;
+  color: #fff;
+  border-radius: 10px;
+  padding: 0.75rem;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.form-control:focus {
+  background: #1a1f37;
+  border-color: #635bff;
+  color: #fff;
+  box-shadow: 0 0 0 0.2rem rgba(99, 91, 255, 0.25);
+  outline: none;
+}
+
+.form-label {
+  color: #a0a5ba;
+  font-weight: 500;
+}
+
+/* Giriş Butonu */
+.submit-btn {
+  background: #635bff;
+  border: none;
+  padding: 0.75rem;
+ border-radius: 25px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background: #4a3aff;
+}
+
+/* Spinner Stili */
+.submit-btn .spinner-border {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 0.5rem;
+  border-color: #fff;
+  border-right-color: transparent;
+}
+
+/* Buton Loading Durumu */
+.submit-btn:disabled {
+  background: #4a3aff;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Cloudflare Turnstile */
+.cf-turnstile {
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  min-height: 70px; /* Turnstile için minimum alan */
+  z-index: 1000; /* Diğer elementlerin üstünde görünmesini sağlar */
+}
+
+/* Responsive Tasarım */
+@media (max-width: 576px) {
+  .login-card {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .login-card h1 {
+    font-size: 1.5rem;
+  }
+
+  .cf-turnstile {
+    transform: scale(0.9); /* Küçük ekranlarda hafif küçült */
+  }
+}

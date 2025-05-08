@@ -1,0 +1,437 @@
+
+/* Tema değişkenleri */
+:root {
+  --bg-color: #f1f5f9;
+  --text-color: #1e293b;
+  --sidebar-bg: #e2e8f0;
+  --sidebar-text: #1e293b;
+  --card-bg: #ffffff;
+  --border-color: #cbd5e1;
+  --button-bg: #635bff;
+  --button-text: #ffffff;
+  --button-hover-bg: #4a3aff;
+  --add-btn-bg: #635bff;
+  --add-btn-hover-bg: #4a3aff;
+  --edit-btn-bg: #f59e0b;
+  --edit-btn-hover-bg: #d97706;
+  --delete-btn-bg: #dc2626;
+  --delete-btn-hover-bg: #b91c1c;
+  --logout-btn-bg: #dc2626;
+  --logout-btn-hover-bg: #b91c1c;
+  --modal-bg: #ffffff;
+  --modal-header-bg: #635bff;
+  --main-content-bg: #f1f5f9;
+}
+
+body.dark {
+  --bg-color: #0f172a;
+  --text-color: #e2e8f0;
+  --sidebar-bg: #1e293b;
+  --sidebar-text: #e2e8f0;
+  --card-bg: #1e293b;
+  --border-color: #475569;
+  --button-bg: #7c3aed;
+  --button-text: #ffffff;
+  --button-hover-bg: #a78bfa;
+  --add-btn-bg: #7c3aed;
+  --add-btn-hover-bg: #a78bfa;
+  --edit-btn-bg: #d97706;
+  --edit-btn-hover-bg: #b45309;
+  --delete-btn-bg: #ef4444;
+  --delete-btn-hover-bg: #dc2626;
+  --logout-btn-bg: #ef4444;
+  --logout-btn-hover-bg: #dc2626;
+  --modal-bg: #1e293b;
+  --modal-header-bg: #7c3aed;
+  --main-content-bg: #0f172a;
+}
+
+/* Genel Stil */
+.admin-container {
+  display: flex;
+  min-height: 100vh;
+  background: var(--bg-color);
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: var(--sidebar-bg);
+  padding: 2rem 1rem;
+  color: var(--sidebar-text);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: all 0.3s ease;
+}
+
+.sidebar h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sidebar-item:hover {
+  background: var(--button-hover-bg);
+  color: var(--button-text);
+}
+
+.sidebar-item.active {
+  background: var(--button-bg);
+  color: var(--button-text);
+}
+
+.sidebar-item svg {
+  margin-right: 0.75rem;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  background: var(--main-content-bg);
+  color: var(--text-color);
+  overflow-y: auto;
+  transition: all 0.3s ease;
+}
+
+/* Header */
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.header-row h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.logout-btn {
+  background: var(--logout-btn-bg);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--button-text);
+  transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+  background: var(--logout-btn-hover-bg);
+}
+
+/* Dashboard Cards */
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.dashboard-card {
+  background: var(--card-bg);
+  border-radius: 15px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.dashboard-card h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.dashboard-card p {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--button-bg);
+}
+
+.dashboard-card small {
+  color: var(--border-color);
+  font-size: 0.9rem;
+}
+
+/* Section Headers */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.section-header h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.add-btn {
+  background: var(--add-btn-bg);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--button-text);
+  transition: all 0.3s ease;
+}
+
+.add-btn:hover {
+  background: var(--add-btn-hover-bg);
+}
+
+/* Cards for Posts, Products, Subscribers */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: var(--border-color);
+  margin-bottom: 1rem;
+}
+
+.card-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.edit-btn {
+  background: var(--edit-btn-bg);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: var(--button-text);
+  transition: all 0.3s ease;
+}
+
+.edit-btn:hover {
+  background: var(--edit-btn-hover-bg);
+}
+
+.delete-btn {
+  background: var(--delete-btn-bg);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: var(--button-text);
+  transition: all 0.3s ease;
+}
+
+.delete-btn:hover {
+  background: var(--delete-btn-hover-bg);
+}
+
+/* Modal Styles */
+.modal-content {
+  background: var(--modal-bg);
+  color: var(--text-color);
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.modal-header {
+  background: var(--modal-header-bg);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom: none;
+}
+
+.modal-title {
+  font-weight: 600;
+  color: var(--button-text);
+}
+
+.modal-body {
+  padding: 2rem;
+}
+
+.modal-footer {
+  border-top: 1px solid var(--border-color);
+}
+
+/* Form stilleri */
+.form-control {
+  background: var(--card-bg);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  background: var(--card-bg);
+  color: var(--text-color);
+  border-color: var(--button-bg);
+  box-shadow: 0 0 0 0.2rem rgba(99, 91, 255, 0.25);
+  outline: none;
+}
+
+.form-label {
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+/* DatePicker stilleri */
+.react-datepicker__input-container input {
+  background: var(--card-bg);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 0.5rem;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.react-datepicker__input-container input:focus {
+  border-color: var(--button-bg);
+  outline: none;
+}
+
+/* Toast stilleri */
+.Toastify__toast {
+  background: var(--card-bg);
+  color: var(--text-color);
+  border-radius: 10px;
+}
+
+/* Tiptap editör stilleri */
+.ProseMirror {
+  background: var(--card-bg);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 300px;
+  transition: all 0.3s ease;
+}
+
+.ProseMirror:focus {
+  border-color: var(--button-bg);
+  outline: none;
+}
+
+/* Bootstrap butonları için ek stiller */
+.btn-outline-primary {
+  color: var(--button-bg);
+  border-color: var(--button-bg);
+  transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background: var(--button-bg);
+  color: var(--button-text);
+}
+
+.btn-secondary {
+  background: var(--logout-btn-bg);
+  border-color: var(--logout-btn-bg);
+  color: var(--button-text);
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: var(--logout-btn-hover-bg);
+  border-color: var(--logout-btn-hover-bg);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .admin-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .main-content {
+    padding: 1rem;
+  }
+
+  .dashboard-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .react-datepicker-wrapper {
+    width: 100%;
+  }
+
+  .image-preview {
+    max-width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+}

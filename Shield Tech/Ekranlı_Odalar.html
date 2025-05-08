@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Shield Tech</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.ico" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial:wght@400&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/ekranlı_odalar.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top ">
+    <div
+      class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="Anasayfa.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
+        <h1 class="sitename" style="color: #db0226;"><strong>Shield Tech</strong></h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="Anasayfa.html" class="active">Anasayfa</a></li>
+          <li id="about" class="dropdown"><a href="#"><span>Kurumsal</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="Hakkımızda.html">Hakkımızda</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown"><a href="EMC_Yankısız_Odalar.html"><span>EMC Yankısız Odalar</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="Tam_Yarı_Yansımasız_Odalar.html">Tam/Yarı Yansımasız Odalar</a></li>
+
+              <li><a href="Askeri_Standart_Odalar.html">Askeri Standart Odalar</a></li>
+              <li class="dropdown"><a href="#"><span>Ekranlı Odalar</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="Güvenli_Sessiz_Odalar.html">Güvenli - Sessiz Odalar</a></li>
+                  <li><a href="Kontrol_ve_Yükseltici_Odaları.html">Kontrol ve Yükseltici Odaları</a></li>
+                  <li><a href="Siber_Güvenlik_Odaları.html">Siber Güvenlik Odaları</a></li>
+                  <li><a href="Medikal_Ekranlama_EEG.html">Medikal Ekranlama - EEG</a></li>
+                  <li><a href="Yüksek_Gerilimli_Lab_Ekranlama.html">Yüksek Gerilimli Lab. Ekranlama</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Test Ölçüm</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="RF_Mikrodalga_Test_Cihazları.html">RF, Mikrodalga, Test Cihazları</a></li>
+              <li><a href="EMC_Test_Aksesuarları.html">EMC Test Aksesuarları</a></li>
+              <li><a href="Bakım_Tamir_Modifikasyon.html">Bakım - Tamir - Modifikasyon</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Hizmetlerimiz</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="Dizayn_Kurulum_Hizmetleri.html">Dizayn - Kurulum Hizmetleri</a></li>
+              <li><a href="Oda_Lokasyon_Değiştirme.html">Oda Lokasyon Değiştirme</a></li>
+              <li><a href="Bakım_Tamir_Modifikasyon.html">Bakım - Tamir - Modifikasyon</a></li>
+            </ul>
+          </li>
+          <li><a href="Ürünler.html">Ürünler</a></li>
+          <li><a href="Blog.html">Blog</a></li>
+          <li><a href="İletişim.html">İletişim</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div id="Language_Selector" class="dropdown">
+        <button style="background-color: rgba(25,64,135,0.1); border-radius: 30px;"
+          class="btn btn-primary-subtle dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          🌐 Dil Seçimi
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#"><span><img class="p-1" src="assets/img/Flags/tr.png" alt=""></span>
+              Türkçe</a></li>
+          <li><a class="dropdown-item" href="#"><span><img class="p-1" src="assets/img/Flags/en.png"
+                  alt=""></span>English</a></li>
+          <li><a class="dropdown-item" href="#"><span><img class="p-1" src="assets/img/Flags/deu.png"
+                  alt=""></span>Deutsch</a></li>
+          <li><a class="dropdown-item" href="#"><span><img class="p-1" src="assets/img/Flags/fr.png"
+                  alt=""></span>Français</a></li>
+          <li><a class="dropdown-item" href="#"><span><img class="p-1" src="assets/img/Flags/ru.png"
+                  alt=""></span>Русский</a></li>
+          <li><a class="dropdown-item" href="#"><span><img class="p-1" src="assets/img/Flags/pt-br.png"
+                  alt=""></span>Português</a></li>
+          <li><a class="dropdown-item" href="#"><span><img class="p-1" src="assets/img/Flags/uae.png" alt=""></span>
+              العربية</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+  </header>
+
+    <!-- Hero Section -->
+<section class="hero-section" >
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8" data-aos="fade-up" data-aos-delay="400" data-aos-once="true">
+        <h1 class="display-4 fw-bold mb-4 text-light">Ekranlı Odalar</h1>
+        <p class="lead mb-5">Elektromanyetik dalgalardan korunma ve güvenlik için profesyonel çözümler sunan ekranlı odalar</p>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="#iletisim" class="btn btn-accent btn-lg px-4 py-2">İletişime Geçin</a>
+          <a href="#urunler" class="btn btn-light btn-lg px-4 py-2">Ürünleri İnceleyin</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Main Content -->
+<div class="container" >
+  <!-- Section 1: Güvenli - Sessiz Odalar -->
+  <section id="guvenli-sessiz-odalar" class="content-section">
+    <div class="row align-items-center" data-aos="slide-right" data-aos-delay="100" data-aos-once="true">
+      <div class="col-lg-6" >
+        <div class="section-badge">Bölüm 1</div>
+        <h2 class="section-title">Güvenli - Sessiz Odalar</h2>
+        <p class="mb-4">
+          Güvenli ve sessiz odalarımız, hassas bilgilerin korunması ve gizli görüşmelerin yapılabilmesi için elektromanyetik dalgalara karşı tam koruma sağlar. Askeri standartlara uygun olarak tasarlanan bu odalar, dış ortamdan gelen sinyalleri engeller ve içerideki bilgilerin dışarı sızmasını önler.
+        </p>
+        
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <div class="feature-content">
+            <h4>Tam Elektromanyetik İzolasyon</h4>
+            <p>Dış ortamdan gelen tüm elektromanyetik sinyallere karşı koruma</p>
+          </div>
+        </div>
+        
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <div class="feature-content">
+            <h4>Akustik İzolasyon</h4>
+            <p>Ses geçirmez yapı ile gizli görüşmeler için ideal ortam</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 section-image">
+        <div class="img-container">
+          <img src="assets/img/Ekranlı_Odalar/Ekranlı_Odalar_2.jpg" alt="Güvenli Sessiz Oda">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Kontrol ve Yükseltici Odaları -->
+  <section id="kontrol-yukseltici-odalari" class="content-section">
+    <div class="row align-items-center flex-lg-row-reverse" data-aos="slide-left" data-aos-delay="200" data-aos-once="true">
+      <div class="col-lg-6">
+        <div class="section-badge">Bölüm 2</div>
+        <h2 class="section-title">Kontrol ve Yükseltici Odaları</h2>
+        <p class="mb-4">
+          Kontrol ve yükseltici odalarımız, hassas elektronik ekipmanların güvenli bir şekilde çalışması için ideal ortamı sağlar. Elektromanyetik girişimlerden arındırılmış bu odalar, kritik sistemlerin kesintisiz ve hatasız çalışmasını garanti eder.
+        </p>
+        
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-microchip"></i>
+          </div>
+          <div class="feature-content">
+            <h4>Hassas Ekipman Koruması</h4>
+            <p>Elektronik cihazların dış etkilerden korunması</p>
+          </div>
+        </div>
+        
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-server"></i>
+          </div>
+          <div class="feature-content">
+            <h4>Kesintisiz Operasyon</h4>
+            <p>7/24 çalışan sistemler için ideal ortam</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 section-image">
+        <div class="img-container">
+          <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Kontrol ve Yükseltici Odaları">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Siber Güvenlik Odaları -->
+  <section id="siber-guvenlik-odalari" class="content-section">
+    <div class="row align-items-center" data-aos="slide-right" data-aos-delay="200" data-aos-once="true">
+      <div class="col-lg-6">
+        <div class="section-badge">Bölüm 3</div>
+        <h2 class="section-title">Siber Güvenlik Odaları</h2>
+        <p class="mb-4">
+          Siber güvenlik odalarımız, kritik bilgi sistemlerinin fiziksel ve elektromanyetik güvenliğini sağlar. Siber saldırılara karşı ekstra koruma katmanı oluşturan bu odalar, veri merkezleri ve güvenlik operasyon merkezleri için ideal çözümler sunar.
+        </p>
+        
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-lock"></i>
+          </div>
+          <div class="feature-content">
+            <h4>Gelişmiş Güvenlik</h4>
+            <p>Fiziksel ve elektromanyetik koruma bir arada</p>
+          </div>
+        </div>
+        
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <div class="feature-content">
+            <h4>TEMPEST Standartları</h4>
+            <p>Uluslararası güvenlik standartlarına uygun tasarım</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 section-image">
+        <div class="img-container">
+          <img src="assets/img/Ekranlı_Odalar/Ekranlı_Odalar_3.jpg" alt="Siber Güvenlik Odaları">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Medikal Ekranlama - EEG -->
+  <section id="medikal-ekranlama" class="content-section">
+    <div class="row align-items-center flex-lg-row-reverse" data-aos="slide-left" data-aos-delay="400" data-aos-once="true">
+      <div class="col-lg-6">
+        <div class="section-badge">Bölüm 4</div>
+        <h2 class="section-title">Medikal Ekranlama - EEG</h2>
+        <p class="mb-4">
+          Medikal ekranlama çözümlerimiz, hassas tıbbi cihazların doğru ve güvenilir sonuçlar vermesi için gerekli ortamı sağlar. EEG, MRI ve diğer hassas medikal ekipmanlar için özel olarak tasarlanan odalarımız, dış elektromanyetik girişimleri engelleyerek doğru teşhis ve tedavi süreçlerine katkıda bulunur.
+        </p>
+        
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-stethoscope"></i>
+          </div>
+          <div class="feature-content">
+            <h4>Hassas Ölçüm İmkanı</h4>
+            <p>Tıbbi cihazlar için ideal elektromanyetik ortam</p>
+          </div>
+        </div>
+        
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <div class="feature-content">
+            <h4>Medikal Standartlara Uygunluk</h4>
+            <p>Uluslararası sağlık standartlarına uygun tasarım</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 section-image">
+        <div class="img-container">
+          <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Medikal Ekranlama">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Yüksek Gerilimli Lab. Ekranlama -->
+  <section id="yuksek-gerilim-lab" class="content-section">
+    <div class="row align-items-center" data-aos="slide-right" data-aos-delay="400" data-aos-once="true">
+      <div class="col-lg-6">
+        <div class="section-badge">Bölüm 5</div>
+        <h2 class="section-title">Yüksek Gerilimli Lab. Ekranlama</h2>
+        <p class="mb-4">
+          Yüksek gerilim laboratuvarları için özel olarak tasarlanan ekranlama çözümlerimiz, hem personel güvenliğini sağlar hem de hassas test ekipmanlarının doğru çalışmasını garanti eder. Elektromanyetik girişimleri engelleyen bu odalar, yüksek voltajlı testlerin güvenli bir şekilde yapılmasına olanak tanır.
+        </p>
+        
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <div class="feature-content">
+            <h4>Yüksek Voltaj Koruması</h4>
+            <p>Personel ve ekipman için maksimum güvenlik</p>
+          </div>
+        </div>
+        
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <div class="feature-content">
+            <h4>Endüstriyel Standartlara Uygunluk</h4>
+            <p>Uluslararası güvenlik normlarına uygun tasarım</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 section-image">
+        <div class="img-container">
+          <img src="assets/img/Ekranlı_Odalar/Ekranlı_Odalar_4.jpg" alt="Yüksek Gerilimli Lab Ekranlama">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6: Teknik Özellikler ve Standartlar -->
+  <section id="teknik-ozellikler" class="content-section" data-aos="fade-up" data-aos-delay="400" data-aos-once="true">
+    <div class="specs-section">
+      <div class="text-center mb-5">
+        <h2 class="section-title mx-auto" style="display: inline-block;">Teknik Özellikler ve Standartlar</h2>
+        <p class="mx-auto" style="max-width: 800px;">
+          Shield Tech ekranlı odaları, uluslararası standartlara uygun olarak tasarlanmış ve test edilmiştir. Aşağıda ürünlerimizin teknik özellikleri ve uyumlu olduğu standartlar hakkında detaylı bilgi bulabilirsiniz.
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="spec-card">
+            <h3>Ekranlama Performansı</h3>
+            <ul class="spec-list">
+              <li>
+                <i class="fas fa-chevron-right"></i>
+                <span>10 kHz - 40 GHz frekans aralığında 80-120 dB zayıflama</span>
+              </li>
+              <li>
+                <i class="fas fa-chevron-right"></i>
+                <span>Galvanize çelik, bakır veya alüminyum ekranlama seçenekleri</span>
+              </li>
+              <li>
+                <i class="fas fa-chevron-right"></i>
+                <span>RF sızdırmaz kapı ve pencere sistemleri</span>
+              </li>
+              <li>
+                <i class="fas fa-chevron-right"></i>
+                <span>Özel filtre ve havalandırma sistemleri</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="col-md-6 mb-4">
+          <div class="spec-card">
+            <h3>Uyumlu Standartlar</h3>
+            <ul class="spec-list">
+              <li>
+                <i class="fas fa-chevron-right"></i>
+                <span>IEEE-299 Ekranlama Etkinliği Standardı</span>
+              </li>
+              <li>
+                <i class="fas fa-chevron-right"></i>
+                <span>MIL-STD-285 Askeri Standartlar</span>
+              </li>
+              <li>
+                <i class="fas fa-chevron-right"></i>
+                <span>NSA 94-106 TEMPEST Standartları</span>
+              </li>
+              <li>
+                <i class="fas fa-chevron-right"></i>
+                <span>IEC 61000 EMC Standartları</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+    
+    <!-- Footer -->
+    <footer data-aos="fade-up" data-aos-delay="400" data-aos-once="true">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6">
+            <img src="assets/Shield-Tech.png" alt="Shield Tech Logo" class="img-fluid mb-4" style="max-width: 200px;">
+            <p class="mb-4">2011 yılında kurulmuş ve EMC Odaları konusunda global bir kuruluş olarak hizmet vermektedir.
+            </p>
+            <div class="social-icons">
+              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5>Hızlı Erişim</h5>
+            <ul>
+              <li><a href="#"><span style=" color:#db0226;  margin-right: 4px;"><i
+                      class="bi bi-arrow-right"></i></span>Hakkımızda</a></li>
+              <li><a href="#"><span style=" color:#db0226;  margin-right: 4px;"><i
+                      class="bi bi-arrow-right"></i></span>Yankısız Odalar</a></li>
+              <li><a href="#"><span style=" color:#db0226;  margin-right: 4px;"><i
+                      class="bi bi-arrow-right"></i></span>Ekranlı Odalar</a></li>
+              <li><a href="#"><span style=" color:#db0226;  margin-right: 4px;"><i
+                      class="bi bi-arrow-right"></i></span>Yansımasız Odalar</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5>Ürünler</h5>
+            <ul>
+              <li><a href="#"><span style=" color:#db0226;  margin-right: 4px;"><i class="bi bi-arrow-right"></i></span>3
+                  Metre</a></li>
+              <li><a href="#"><span style=" color:#db0226;  margin-right: 4px;"><i class="bi bi-arrow-right"></i></span>5
+                  Metre</a></li>
+              <li><a href="#"><span style=" color:#db0226;  margin-right: 4px;"><i class="bi bi-arrow-right"></i></span>10
+                  Metre</a></li>
+              <li><a href="#"><span style=" color:#db0226;  margin-right: 4px;"><i
+                      class="bi bi-arrow-right"></i></span>Tüm Ürünler</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5>İletişim</h5>
+            <address>
+              <p>Merkez Ofis</p>
+              <p>İstanbul, Türkiye</p>
+              <p class="mt-2">Email: info@shieldtech.com</p>
+              <p>Tel: +90 212 123 45 67</p>
+            </address>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© <span id="currentYear"></span> <span style="color: #db0226;">Shield Tech.</span> Tüm hakları saklıdır.</p>
+        </div>
+      </div>
+    </footer>
+    
+      <!-- Vendor JS Files -->
+      <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/vendor/aos/aos.js"></script>
+      <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+      <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+      <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+      <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+      <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+      <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    
+      <!-- Main JS File -->
+      <script src="assets/js/main.js"></script>
+    
+    
+    
+    </body>
+    
+    </html>
